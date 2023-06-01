@@ -29,18 +29,14 @@ class Program
             Console.Write("Check-out date (MM/dd/yyyy): ");
             checkOut = DateTime.Parse(Console.ReadLine());
 
-            DateTime now = DateTime.Now;
-            if (checkIn < now || checkOut < now)
+            string error = reservation.UpdateDates(checkIn, checkOut);
+
+            if (error != null)
             {
-                Console.WriteLine("Error in reservation: Reservation dates for update must be future dates");
+                Console.WriteLine("Error in reservation: " + error);
             }
-            else if (checkOut <= checkIn)
-            {
-                Console.WriteLine("Error in reservation: Check-out date must be after check-in date");
-            } 
             else
             {
-                reservation.UpdateDates(checkIn, checkOut);
                 Console.WriteLine("Reservation: " + reservation);
             }
         }
