@@ -15,7 +15,7 @@ class Program
 
         if (checkOut <= checkIn)
         {
-            Console.WriteLine("Error in Reservation: Check-out must be after check-in date!");
+            Console.WriteLine("Error in Reservation: Check-out must be after check-in date");
         }
         else
         {
@@ -32,11 +32,11 @@ class Program
             DateTime now = DateTime.Now;
             if (checkIn < now || checkOut < now)
             {
-                Console.WriteLine("Error in reservation: Reservation dates for update must be future dates!");
+                Console.WriteLine("Error in reservation: Reservation dates for update must be future dates");
             }
             else if (checkOut <= checkIn)
             {
-                Console.WriteLine("Error in Reservation: Check-out must be after check-in date!");
+                Console.WriteLine("Error in Reservation: Check-out must be after check-in date");
             } 
             else
             {
