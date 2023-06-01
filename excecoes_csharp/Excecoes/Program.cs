@@ -36,7 +36,7 @@ class Program
             }
             else if (checkOut <= checkIn)
             {
-                Console.WriteLine("Error in Reservation: Check-out must be date check-in date!");
+                Console.WriteLine("Error in Reservation: Check-out must be after check-in date!");
             } 
             else
             {
