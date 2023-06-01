@@ -1,7 +1,7 @@
 ﻿using System;
 using Excecoes.Entities;
 
-namespace Exececoes;
+namespace Excecoes;
 class Program
 {
     static void Main(string[] args)
@@ -15,7 +15,7 @@ class Program
 
         if (checkOut <= checkIn)
         {
-            Console.WriteLine("Error in Reservation: Check-out must be after check-in date");
+            Console.WriteLine("Error in reservation: Check-out date must be after check-in date");
         }
         else
         {
@@ -36,7 +36,7 @@ class Program
             }
             else if (checkOut <= checkIn)
             {
-                Console.WriteLine("Error in Reservation: Check-out must be after check-in date");
+                Console.WriteLine("Error in reservation: Check-out date must be after check-in date");
             } 
             else
             {
